@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=M+PLUS+1p:wght@100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3e0;
+  padding: 20px;
+  list-style: none;
+  margin: 10 auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  float: right;
+  font-size: large;
+  padding: 10 10 30px;
+  text-decoration: none;
+  color: black;
+  margin-right: 40px;
+  transition: all 0.2s ease-in-out;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+nav a:hover {
+  color: rgb(147, 145, 145);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 52, 52);
+  font-size: 15px;
+  transform: scale(1.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: orange;
+}
+
+.img-title {
+  position: absolute;
+  top: 80%;
+  transform: translate(-50%, -50%, -50%);
+  color: aliceblue;
+  font-family: "M PLUS 1p", sans-serif;
+  width: 25%;
+  font: size 50px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.3% {
+    transform: translateX(-800px);
+  }
+  66.6% {
+    transform: translateX(-1600px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.news {
+  display: flex;
+  justify-content: center;
+  color: #d2874d;
+}
+
+.news h1 {
+  font-size: 40px;
+  padding-top: 30px;
+  box-shadow: #222;
+}
+
+/*CARDS*/
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  flex-wrap: wrap; /* Quebra linha dos elementos quando não houver mais espaço */
+}
+
+.card {
+  float: left;
+  justify-content: space-between; /* Distribui o espaço entre os elementos internos */
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Redimensiona a imagem para ocupar toda a largura do container */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d2874d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*Area de Fofocas - Alexandre */
+.area-fofocas {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /*Serve para aplicar a suposta responsividade*/
+}
+
+.fofocas {
+  width: 100%;
+  max-width: 660px;
+  height: auto;
+  flex: 1 0 50%;
+  margin: 20px 20px;
+}
+
+/*Alteração das fofocas em destaque*/
+.fofocas h1 {
+  color: orange;
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 35px;
+}
+
+.img-fofocas {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+#video {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/*Responsividade para meu menu lateral descer e deixar a lista de fofocas em cima em telas pequenas*/
+@media (max-width: 768px) {
+  .fofocas {
+    flex-basis: 50%; /* Ocupar 50% do espaço disponível */
+  }
+  .menu-lateral {
+    flex-basis: 50%; /* Ocupar 50% do espaço disponível */
+    margin-left: 0; /* Remover a margem esquerda */
+  }
+}
+
+/* Estilos específicos para dispositivos de tela média */
+@media screen and (max-width: 768px) {
+  /* Modificar estilos para dispositivos de tela média */
+}
+
+/* Estilos específicos para dispositivos de tela pequena */
+@media screen and (max-width: 480px) {
+  /* Modificar estilos para dispositivos de tela pequena */
+}
+/*Fim da responsividade dos elementos*/
+.menu-lateral {
+  width: 100%;
+  max-width: 240px;
+  margin: 20px 20px;
+}
+/* aqui é onde ficar o banner de propaganda*/
+.banner {
+  width: 240px;
+  margin-top: 30px;
+}
+.banner img {
+  width: 240px;
+  height: 500px;
+}
+/*fim banner propaganda*/
+.imagemFofoca {
+  flex: 0 0 auto; /* Crescer ou encolher conforme necessário, tamanho automático */
+  margin-right: 1rem; /* Adicionar espaçamento à direita da imagem */
+  width: 200px;
+  height: 150px;
+}
+
+.textoFofoca {
+  flex: 1; /* Para preencher o espaço disponível */
+}
+
+.textoFofoca h2 {
+  color: orange;
+}
+
+.fofoca {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.btn-lateral a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/*Configurações Footer Juci - Brigadão Senhorita*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3e0;
+  padding: 20px;
+  list-style: none;
+  margin: 10 auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+}
+.footer a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer img {
+  height: 40px;
+}
+/*Formulario*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+}
+.button{
+  width: 200px;
+  align-items: center;
+  margin: 60px;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input,
+select {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button[type="submit"] {
+  padding: 10px;
+  background-color: rgb(178, 180, 180);
+  border: 3px solid #676767;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  input[type="date"] {
+    width: 100%;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FofoCoders</title>
+    <link rel="shortcut icon" href="imagem/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styleNoti.css">
+</head>
+
+<body>
+    <header class="menu">
+        <!--Logo Fofocoders-->
+        <h1 class="logo" href="index.html">Fofo<i>Coders</i></h1>
+        <nav><!--Começo de Menu Para outras pages-->
+            <ul>
+                <li>
+                    <a href="index.html"><b>Home</b></a>
+                    <a href="noticias.html"> <b>Notícias</b></a>
+                    <a href="contato.html"><b>Contatos</b></a>
+                </li>
+            </ul>
+        </nav><!--Fim de Menus para outras pages-->
+
+    </header>
+    <section class="area-fofocas">
+        <section class="fofocas"><!--Talvez precise criar uma class para trabalhar aqui-->
+            <!--Aqui vai o formulário do contato-->
+            <form action="/submit" method="post" onsubmit="return validarNomeTelefone();" class="formulario">
+                <h2>Cadastre-se para receber fofocas quentinhas</h2><br />
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder=" Digite seu primeiro nome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobre" name="sobrenome" required placeholder=" Digite seu sobrenome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder=" Digite seu email">
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" placeholder=" Digite sua data de Nascimento">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder=" Digite seu telefone">
+                <label for="interesse">Qual conteúdo mais te interessa?</label>
+                <select id="interesse" name="interesse" required="Por favor selecionar uma opção">
+                    <option value="opcao1">Celebridades</option>
+                    <option value="opcao2">Política</option>
+                    <option value="opcao3">Música</option><br />
+                </select>
+                <label for="termos">Aceito os termos de uso do site</label>
+                <input type="checkbox" id="termos" name="termos" required>
+                <!--O envio do e-mail não vou marcar obrigatório pois o usuário tem a opção de receber ou não nossas novidades-->
+                <label for="envio_emails">Aceito receber emails com informações do site</label>
+                <input type="checkbox" id="envio_emails" name="envio_emails">
+                </select>
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </section>
+        <aside class="menu-lateral">
+            <!--Menu com links de ancoragem-->
+            <nav class="btn-lateral">
+                <ul>
+                    <li><a href="../index.html">Voltar Para Home</a></li>
+                    <li><a href="#redes">Conheça nossas Redes</a></li>
+                    <li><a href="contato.html">Parceria com Fofocoders?!</a></li><!--Cadastro para nosso formulário-->
+                </ul>
+            </nav>
+            <!--Fim menu lateral-->
+            <div class="banner"><!--imagem de propaganda-->
+                <img src="imagem/Jessica-Alba-Honor-Taller-Family-Rare-Spl-ftr.webp" alt="">
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <section class="footer">
+            <p id="redes">Siga-nos nas redes sociais</p>
+            <br>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="imagem/insta.png"
+                    alt="instagram"></a>
+            <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img src="imagem/linkedin.png"
+                    alt="linkedin"></a>
+            <a href="https://soulcode.com/" target="_blank"><img src="imagem/SoulCode.png" alt="soulcode"></a>
+            <br>
+        </section>
+        <p>&copy; 2023 - Soulcode Academy</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
