@@ -10,7 +10,7 @@ function validarNomeTelefone() {
   //começar com as lógicas
   //verifica se os campos só contem letras e não números
   if (!regexLetras.test(nome) || !regexLetras.test(sobre)) {
-    alert("Por favor, preencha os campos Nome e Sobrenome corretamente.");
+    alert("Por favor, preencha o campo Sobrenome corretamente.");
     return false;
   }
   //verificar se o telefone só contem números e não letras
@@ -30,7 +30,7 @@ function validarNome() {
   //variavel regex para seomente letras
   let regexLetras = /^[a-zA-Z]+$/;
   if (!regexLetras.test(nome)) {
-    alert("Por favor, preencha os campos Nome e Sobrenome corretamente.");
+    alert("Por favor, preencha o campo Nome corretamente.");
     return false;
   }
   return true;
