@@ -158,18 +158,33 @@ nav a:hover {
 
 /*Alteração das fofocas em destaque*/
 .fofocas h1 {
-  color: orange;
-  text-align: center;
+  color: black;
+  text-align: justify;
   margin: 10px 10px;
-  font-size: 35px;
+  font-size: 30px;
 }
+.fofocas h3{ /* acrescentei essa classe (Jucilene)*/
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+  margin: 10px 10px;
+  padding: 15px;
+}
+.fofocas p{ /* acrescentei essa classe (Jucilene)*/
 
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  padding-top: 20px;
+  line-height: 1.5;
+
+}
 .img-fofocas {
   width: 100%;
   max-width: 600px;
   height: 100%;
-  max-height: 400px;
+  max-height: 350px;
   margin-bottom: 20px;
+  border-radius: 30px;
 }
 
 #video {
@@ -218,6 +233,7 @@ nav a:hover {
   margin-right: 1rem; /* Adicionar espaçamento à direita da imagem */
   width: 200px;
   height: 150px;
+  border-radius: 10px;
 }
 
 .textoFofoca {
@@ -312,4 +328,8 @@ select {
   input[type="date"] {
     width: 100%;
   }
+}
+.leiaMais{ /*Alguem ajuda a mudar essa droga? hahahahhahaha*/
+  font-size: 20px;
+  padding-bottom: 30px;
 }
