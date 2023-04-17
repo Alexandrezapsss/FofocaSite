@@ -24,7 +24,7 @@ function validarNomeTelefone() {
 
 }//termino da função vaidarNomeTelefone
 //incio de validar nome
-function validarNome(){
+function validarNome() {
   //variavel para armazenar i valor do id nome
   let nome = document.getElementById("nome").value;
   //variavel regex para seomente letras
